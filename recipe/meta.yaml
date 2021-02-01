@@ -1,5 +1,5 @@
 {% set name = "IOHexperimenter" %}
-{% set version = "0.2.8.7" %}
+{% set version = "0.2.9.2" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/IOHexperimenter-{{ version }}.tar.gz
-  sha256: 7a22e56b2626bdf30d637677413670a9211ca72a78cf6cf76b57a63f8b288e77
+  sha256: 51315f4beae84361e332ed1bbb1adf9004162e208efd95e192a87d6d1465e847
 
 build:
-  number: 2
-  skip: true   # [py2k]
+  number: 0
+  skip: true  # [py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -38,5 +38,5 @@ about:
 
 extra:
   recipe-maintainers:
-   - JennaLipscomb
-   - oblute
+    - JennaLipscomb
+    - oblute
