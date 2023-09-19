@@ -11,8 +11,7 @@ source:
   sha256: 51315f4beae84361e332ed1bbb1adf9004162e208efd95e192a87d6d1465e847
 
 build:
-  number: 2
-  skip: true  # [py2k]
+  number: 3
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -33,7 +32,7 @@ test:
 about:
   home: https://github.com/IOHprofiler/IOHexperimenter
   summary: The experimenter for Iterative Optimization Heuristic
-  license: GPL-3.0
+  license: BSD-3-Clause
   license_file: LICENSE.txt
 
 extra:
